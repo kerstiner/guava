@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GUAVA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+<div>
+	<button id="deleteSelect" type="button" class="btn btn-danger delete">Delete</button>
+	<button id="favorite" type="button" class="btn btn-warning">Add to Favorite</button>
+</div>
+<table class="table table-hover" id="dataTable">
+  <thead>
+    <tr>
+      <th>
+      	<div class="form-check">
+      		<input type="checkbox" id="checkAll" > Select All
+      	</div>	
+      </th>
+      <th>Rate</th>
+      <th>Type</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody class="tableData">
+    <tr class="trData">
+      	<td>  
+      		<div class="form-check">
+      			 <input class= "checkbox" type="checkbox" id="checkItem1"> 
+      		</div>
+		    </td>
+      <td>
+          <div>Sunny</div>
+      </td>
+      <td>C</td>
+      <td>Open</td>
+    </tr>
+    <tr class="trData">
+      <td>
+      	    <div class="form-check">
+      			<input class= "checkbox" type="checkbox" id="checkItem2"> 
+      </td>
+      <td>Jacob</td>
+      <td>G</td>
+      <td>Pending</td>
+    </tr>
+    <tr class="trData">
+     <td>
+      	   <div class="form-check">
+      			 <input class= "checkbox" type="checkbox" id="checkItem3"> 
+      		</div>
+     </td>
+      <td>Mark</td>
+      <td>E</td>
+      <td>Closed</td>
+    </tr>
+    <tr class="trData">
+      <td>
+      	   <div class="form-check">
+      			 <input class= "checkbox" type="checkbox" id="checkItem4"> 
+      		</div>
+      </td>
+      <td>Mark</td>
+      <td>H</td>
+      <td>Closed</td>
+    </tr>
+    <tr class="trData">
+      <td>
+      	   <div class="form-check">
+      			 <input class= "checkbox" type="checkbox" id="checkItem5"> 
+      		</div>
+      </td>
+      <td>Mark</td>
+      <td>R</td>
+      <td>Open</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<script type="text/javascript" src="vendor/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
