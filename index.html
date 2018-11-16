@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 </head>
 
 <body>
 <div>
 	<button id="deleteSelect" type="button" class="btn btn-danger delete">Delete</button>
-	<button id="favorite" type="button" class="btn btn-warning">Add to Favorite</button>
+	<button id="favoriteSelect" type="button" class="btn btn-warning favorite">Add to Favorite</button>
 </div>
 <table class="table table-hover" id="dataTable">
   <thead>
@@ -35,8 +35,8 @@
       			 <input class= "checkbox" type="checkbox" id="checkItem1"> 
       		</div>
 		    </td>
-      <td>
-          <div>Sunny</div>
+      <td class="starRate">
+          <span class="fas fa-star"></span>
       </td>
       <td>C</td>
       <td>Open</td>
@@ -46,7 +46,9 @@
       	    <div class="form-check">
       			<input class= "checkbox" type="checkbox" id="checkItem2"> 
       </td>
-      <td>Jacob</td>
+      <td class="starRate">
+          <span class="fas fa-star"></span>
+      </td>
       <td>G</td>
       <td>Pending</td>
     </tr>
@@ -56,7 +58,9 @@
       			 <input class= "checkbox" type="checkbox" id="checkItem3"> 
       		</div>
      </td>
-      <td>Mark</td>
+      <td class="starRate">
+          <span class="fas fa-star"></span>
+      </td>
       <td>E</td>
       <td>Closed</td>
     </tr>
@@ -66,7 +70,9 @@
       			 <input class= "checkbox" type="checkbox" id="checkItem4"> 
       		</div>
       </td>
-      <td>Mark</td>
+      <td class="starRate">
+          <span class="fas fa-star"></span>
+      </td>
       <td>H</td>
       <td>Closed</td>
     </tr>
@@ -76,14 +82,14 @@
       			 <input class= "checkbox" type="checkbox" id="checkItem5"> 
       		</div>
       </td>
-      <td>Mark</td>
+      <td class="starRate">
+          <span class="fas fa-star"></span>
+      </td>
       <td>R</td>
       <td>Open</td>
     </tr>
   </tbody>
 </table>
-
-
 <script type="text/javascript" src="vendor/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 </body>

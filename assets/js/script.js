@@ -2,16 +2,14 @@ $(document).ready(function(){
 
 var checkAll = $("#checkAll");
 var deleteSelect = $("#deleteSelect");
-var favorite = $("#favorite");
+var favoriteSelect = $("#favoriteSelect");
 var checkbox = $(".checkbox");
 var checkItem1 = $("#checkItem1");
 var tableData = $("#tableData");
 var trData = $("#trData");
 
-
-
 deleteSelect.hide();
-favorite.hide();
+favoriteSelect.hide();
 
 
 //select all checkboxes
@@ -47,20 +45,25 @@ deleteSelect.click(function(){
 	$("input:checkbox:checked").parents("tr").remove();
  });
 
+favoriteSelect.click(function(){
+	var checked = $("input:checkbox:checked").map(function(){
+		return this.value;
+	}).get();
+	$("input:checkbox:checked").parents("tr").children(".starRate").addClass("star");
+	
+});
 
 
 function showbutton(status){
 	if (status) {
-		favorite.show();
+		favoriteSelect.show();
 		deleteSelect.show();
 	}else if($(".checkbox:checked").length == 0){
 		deleteSelect.hide();
-		favorite.hide();
+		favoriteSelect.hide();
 	}
 
 }
 
-
-	
 
 });
