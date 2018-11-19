@@ -5,8 +5,6 @@ var deleteSelect = $("#deleteSelect");
 var favoriteSelect = $("#favoriteSelect");
 var checkbox = $(".checkbox");
 var checkItem1 = $("#checkItem1");
-var tableData = $("#tableData");
-var trData = $("#trData");
 
 deleteSelect.hide();
 favoriteSelect.hide();
@@ -49,8 +47,12 @@ favoriteSelect.click(function(){
 	var checked = $("input:checkbox:checked").map(function(){
 		return this.value;
 	}).get();
-	$("input:checkbox:checked").parents("tr").children(".starRate").addClass("star");
+	$("input:checkbox:checked").parents("tr").find(".fa-star").addClass("star");
 	
+});
+
+$(".fa-star").click(function(){
+	$(this).toggleClass("star");
 });
 
 
